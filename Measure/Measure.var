@@ -1,0 +1,23 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Program: Measure
+ * File: Measure.var
+ * Author: fasch_f
+ * Created: June 27, 2012
+ ********************************************************************
+ * Local variables of program Measure
+ ********************************************************************)
+VAR
+	bridgeraw4t : DINT := 0;
+	bridgeraw3t : DINT := 0;
+	bridgeraw2t : DINT := 0;
+	bridgeraw1t : DINT := 0;
+	DisableWeightFilter : BOOL := FALSE;
+	DisableServoVelFilter : BOOL := FALSE;
+	old_gear : USINT := 0;
+	WeightFilterBase : UINT := 10;
+	ROPFilterBase : UINT := 10;
+	FUB_FilterServoVel : LCRMovAvgFlt := (0);
+	FUB_FilterWeight : LCRMovAvgFlt := (0);
+END_VAR
