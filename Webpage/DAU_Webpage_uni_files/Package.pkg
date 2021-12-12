@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">contact.html</Object>
+    <Object Type="File">drill_config.asp</Object>
+    <Object Type="File">drill_data.asp</Object>
+    <Object Type="File">image002.jpg</Object>
+    <Object Type="File">image003.gif</Object>
+    <Object Type="File">left.html</Object>
+    <Object Type="File">square.png</Object>
+    <Object Type="File">top.html</Object>
+  </Objects>
+</Package>
