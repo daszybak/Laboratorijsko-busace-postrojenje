@@ -1,0 +1,84 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * File: Global.var
+ * Author: scheibelmasser_a
+ * Created: July 01, 2009
+ ********************************************************************
+ * Global variables of project mydrill
+ ********************************************************************)
+VAR
+	positionset : USINT := 0;
+	BIASlinenumberdef : USINT := 0;
+	BIASlinenumber : UDINT := 0;
+	gWOB : REAL := 0.0;
+	gHookMax : REAL := 0.0;
+	Web_DisableWeightFilter : BOOL := FALSE;
+	Web_DisableROPFilter : BOOL := FALSE;
+	Web_WeightFilterBase : UINT := 10;
+	Web_ROPFilterBase : UINT := 10;
+	Web_MaxHookload : REAL := 0.0;
+	Web_WOB : REAL := 0.0;
+	Web_ResetMaxHook : BOOL := FALSE;
+	Pos_Init : BOOL := FALSE;
+	Web_PosInit : BOOL := FALSE;
+	Bridge_Raw4 : DINT := 0;
+	Bridge_Raw3 : DINT := 0;
+	Bridge_Raw2 : DINT := 0;
+	Bridge_Raw1 : DINT := 0;
+	gAct_Pump : BOOL := FALSE;
+	gActFU_On : BOOL := FALSE; (*On/Off Signal FU (Drill Motor)*)
+	gActServo_Down : BOOL := FALSE; (*Servo Move Down X10.14*)
+	gActServo_Torque : BOOL := FALSE; (*Servo Current Mode X10.4*)
+	gActServo_Up : BOOL := FALSE; (*Servo Move Up X10.15*)
+	gActServo_Velocity : BOOL := FALSE; (*Servo Velocity Mode X10.2*)
+	gADC_Config : USINT := 50;
+	gDistance : REAL := 0.0;
+	gDrawServo_Pos : DINT := 0;
+	gDrawServo_Vel : INT := 0;
+	gDrawServo_Vel_fil : INT := 0; (*filtered servo velocity*)
+	gFU_Argument : INT := 0; (*FU Command Argument*)
+	gFU_Command : USINT := 0; (*FU Command Number*)
+	gFU_Frequency : REAL := 0.0;
+	gFU_Power : UINT := 0;
+	gFU_Remote : BOOL := FALSE; (*Switch Bus to FU CMD Mode*)
+	gLamp_Automatic : BOOL := FALSE;
+	gLamp_Drawwork : BOOL := FALSE;
+	gLamp_Drill : BOOL := FALSE;
+	gLamp_Invalid : BOOL := FALSE;
+	gLamp_Manuel : BOOL := FALSE;
+	gLamp_Pump : BOOL := FALSE;
+	gLamp_Ready : BOOL := FALSE;
+	gServo_Argument : UDINT := 0; (*Servo Command Argument*)
+	gServo_Command : USINT := 0; (*Servo Command*)
+	gServo_Remote : BOOL := FALSE;
+	gSwitch_Acknowledge : BOOL := FALSE;
+	gSwitch_Automatic : BOOL := FALSE;
+	gSwitch_Down : BOOL := FALSE;
+	gSwitch_Drill : BOOL := FALSE;
+	gSwitch_Limit_Up2 : BOOL := FALSE;
+	gSwitch_Limit_Up1 : BOOL := FALSE;
+	gSwitch_Limit_Down1 : BOOL := FALSE; (*Limit Switch Lower Position X10.14*)
+	gSwitch_Limit_Temp : BOOL := FALSE; (*Overtemperature Drill Motor FU_On*)
+	gSwitch_Limit_Down2 : BOOL := FALSE; (*Limit Switch Upper Position X10.15*)
+	gSwitch_Manuel : BOOL := FALSE;
+	gSwitch_NotAus : BOOL := FALSE;
+	gSwitch_Pump : BOOL := FALSE;
+	gSwitch_Up : BOOL := FALSE;
+	gWeight : REAL := 0.0;
+	Web_Blockpos : REAL := 0.0; (*Variables for Webpage*)
+	Web_Hookload : REAL := 0.0;
+	Web_ROP : REAL := 0.0;
+	Web_RPM : REAL := 0.0;
+	Web_Sonic : REAL := 0.0;
+	Web_Torque : REAL := 0.0;
+	WebPara_Gear : USINT := 1;
+END_VAR
+(*Values for Recording*)
+VAR
+	grLogVal : ARRAY[0..13] OF REAL;
+	strCurrentDT : DTStructure := (0); (*current date and time for receiving timestamp*)
+	gbStartLogging : BOOL := TRUE; (*by setting it to TRUE USB logging is started*)
+	bRec : BOOL; (*Set bool to 1 for recording*)
+	gTorqMin : REAL := 50.0; (*Minimum Free Torque*)
+END_VAR
