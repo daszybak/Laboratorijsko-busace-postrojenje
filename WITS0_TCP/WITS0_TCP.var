@@ -1,0 +1,45 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Program: WITS0_TCP
+ * File: WITS0_TCP.var
+ * Author: fasch_f
+ * Created: May 04, 2012
+ ********************************************************************
+ * Local variables of program WITS0_TCP
+ ********************************************************************)
+(*Constants*)
+VAR CONSTANT
+	sWellID : STRING[40] := 'MUL-MiniRig-001'; (*WellID used for WITS0 record*)
+END_VAR
+(*local WITS0 variables*)
+VAR
+	ActTime : RTCtime_typ := (0); (*current date and time structure*)
+	sDate : STRING[20] := ''; (*string variable for current date*)
+	sTime : STRING[20] := ''; (*string variable for current time*)
+	sTemp : STRING[20] := ''; (*string variable for temporary usage*)
+	usiData : ARRAY[0..999] OF USINT := [1000(0)]; (*data space for WITS0 record*)
+	strWitsInfo : RECORD_INFO_TYP := (0); (*info structure, needed for WITS0 library*)
+END_VAR
+(*AsTcp Function Blocks*)
+VAR
+	FUB_TcpOpen : TcpOpen := (0); (*opens a TCP socket on etherent interface*)
+	FUB_TcpServer : TcpServer := (0); (*starts a TCP server on ethernet interface*)
+	FUB_TcpSend : ARRAY[0..5] OF TcpSend := [6((0))]; (*sending data via TCP*)
+	FUB_TcpClose : TcpClose := (0); (*closing socket on etehrenet interface*)
+END_VAR
+(*Tcp-Communication variables*)
+VAR
+	FUB_GetIP : CfgGetIPAddr := (0); (*reads the IP address of the ethernet interface*)
+	enServerState : TCP_STATES := SEL_IF; (*variable for used state machine*)
+	TcpServerInfo : ARRAY[0..5] OF TCP_INFO_STRUCT := [6((0))]; (*information structure*)
+	IPAddrIF2 : STRING[20] := ''; (*IP Address of ethernet interface*)
+	ServerIPAddr : STRING[20] := ''; (*IP Address of TCP-Server (PLC)*)
+	StatusString : STRING[40] := ''; (*status tring*)
+	ServerIdent : UDINT := 0; (*ident used at the function blocks*)
+	TcpServerPort : UINT := 0; (*used TCP port*)
+	ServCount : USINT := 0; (*count connected clients*)
+	SendTCPStream : BOOL := FALSE; (*trigger data send*)
+	CycleCounter : USINT := 0; (*cycle counter to count task cycles*)
+	i : INT := 0; (*index variable for loops*)
+END_VAR
