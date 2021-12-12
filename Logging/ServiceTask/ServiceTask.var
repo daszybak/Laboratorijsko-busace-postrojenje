@@ -1,0 +1,13 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Program: ServiceTask
+ * File: ServiceTask.var
+ * Author: fasch_f
+ * Created: March 06, 2014
+ ********************************************************************
+ * Local variables of program ServiceTask
+ ********************************************************************)
+VAR
+	FUB_GetTime : DTStructureGetTime;
+END_VAR

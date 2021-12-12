@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0.90.20 SP02?>
+<Library Version="1.00.0" Description="Tools and conversion-functions" xmlns="http://br-automation.co.at/AS/Library">
+  <Files>
+    <File Description="Exported data types">adsUtil.typ</File>
+    <File Description="Exported constants">adsUtil.var</File>
+    <File Description="Exported functions and function blocks">adsUtil.fun</File>
+  </Files>
+  <Dependencies>
+    <Dependency ObjectName="astime" />
+    <Dependency ObjectName="AsMath" FromVersion="0.00.0" />
+    <Dependency ObjectName="asstring" FromVersion="0.00.0" />
+  </Dependencies>
+</Library>

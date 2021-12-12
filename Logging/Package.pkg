@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.2.10.53 SP?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Program" Language="ANSIC" Description="Program">Temp_Logging</Object>
+    <Object Type="Program" Language="IEC" Description="Sample for all AsUSB-Library-Functions">read_data</Object>
+    <Object Type="Program" Language="ANSIC" Description="Service Task for miscellaneous services">ServiceTask</Object>
+  </Objects>
+</Package>

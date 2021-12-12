@@ -1,0 +1,34 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Library: adsWITS0
+ * File: adsWITS0.var
+ * Author: fasch_f
+ * Created: August 11, 2010
+ ********************************************************************
+ * Constants of library adsWITS0
+ ********************************************************************)
+VAR CONSTANT
+	WITS_PARERROR : UDINT := 10001;
+	WITS_NOAREA : UDINT := 10002;
+	WITS_RECORD_FULL : UDINT := 10003;
+END_VAR
+(*Record ID Constants*)
+VAR CONSTANT
+	WITS_REC_GENTIME : STRING[3] := '01';
+	WITS_REC_DRILDEPTH : STRING[3] := '02';
+END_VAR
+(*Item ID Constants*)
+VAR CONSTANT
+	WITS_ITEM_WELLID : STRING[3] := '01';
+	WITS_ITEM_DATE : STRING[3] := '05';
+	WITS_ITEM_TIME : STRING[3] := '06';
+	WITS_ITEM_BLOCKPOS : STRING[3] := '12';
+	WITS_ITEM_RATEOFPEN : STRING[3] := '13';
+	WITS_ITEM_ROTTORQUE_AVG : STRING[3] := '18';
+	WITS_ITEM_ROTSPEED_AVG : STRING[3] := '20';
+	WITS_ITEM_SPARE1 : STRING[3] := '41';
+	WITS_ITEM_SPARE2 : STRING[3] := '42';
+	WITS_ITEM_SPARE3 : STRING[3] := '43';
+	WITS_ITEM_SPARE4 : STRING[3] := '44';
+END_VAR

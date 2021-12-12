@@ -1,0 +1,41 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Program: TempLogging
+ * File: TempLogging.var
+ * Author: fasch_f
+ * Created: March 06, 2014
+ ********************************************************************
+ * Local variables of program TempLogging
+ ********************************************************************)
+VAR
+	i : INT; (*Number of recorded channels -1*)
+	enLoggingState : LOGGING_STATES;
+	udiMaxFileSize : UDINT := 10485760;
+	bChanged : BOOL;
+	bIgnoreErrors : BOOL := TRUE;
+	bWriteToFile : BOOL;
+	bQuitError : BOOL;
+	usiCycleCnt : USINT;
+	usiCycleScale : USINT := 3;
+	usiIndex : USINT;
+	uiStringOffset : UINT;
+	udiWriteOffset : UDINT;
+	udiError : UDINT; (*Errornumber, if an error happens*)
+	udiFileIdent : UDINT; (*File Ident needed for the file operations*)
+	udiWriteLen : UDINT;
+END_VAR
+(*Insert your comment here.*)
+VAR
+	rLastValues : ARRAY[0..13] OF REAL := [0,2(0.0)];
+	sFilename : STRING[25];
+	sTemp : STRING[40];
+	sValues : ARRAY[0..19] OF STRING[240];
+	sValues_Write : STRING[1600];
+	sErrorText : STRING[160];
+	sLastError : STRING[160];
+	FUB_FileOpen : FileOpen;
+	FUB_FileWrite : FileWrite;
+	FUB_FileCreate : FileCreate;
+	FUB_FileClose : FileClose;
+END_VAR
