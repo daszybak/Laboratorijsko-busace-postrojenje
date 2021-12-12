@@ -1,0 +1,27 @@
+(********************************************************************
+ * COPYRIGHT --  
+ ********************************************************************
+ * Data object: mb_para
+ * File: mb_para.dat
+ * Author: scheibelmasser_a
+ * Created: September 21, 2009
+ ********************************************************************
+ * Data object file: mb_para.dat
+ ********************************************************************)
+
+
+(* EventPV , Modbus Function , Station Number, Process Variable ,Address, Length *)
+(* EventPV 0 skip, empty cyclic, name reset when no error *)
+(*" ", 03, $02, "LocalMB4[5]", 0000, 0003 *)
+
+
+" ", 03, $1F, "FU_RS422:LocalMB4[0]", $0020, 0011 (* Reg. 20-2A Status *)
+" ", 03, $1F, "FU_RS422:LocalMB4[12]", $0001, 0002 (* Reg. 1-2  Command Status *) 
+" ", 03, $1F, "FU_RS422:LocalMB4[14]", $0180, 0002 (* Reg. 180-181  Run Parameter *) 
+
+
+
+
+
+
+
