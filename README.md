@@ -1,6 +1,6 @@
 #  Diplomski rad: Laboratorijsko bušaće postrojenje
 
-## Slike laboratorijskog bušaćeg postrojenja:
+## Slike laboratorijskog bušaćeg postrojenja
 
 ### Nova konstrukcija
 
@@ -14,7 +14,7 @@
 
 Svrha projekta je bila redizajn starog laboratorijskog bušaćeg postrojenja promjenom konstrukcije i senzora. Stara električna kontrolna kutija se koristi u novoj iteraciji laboratorijskog bušaćeg postrojenja, ali ona prethodno nije sadržavala dokumentaciju. Obrnutim inženjeringom sam izvukao konfiguracije PLC-a, servo kontrolera i vektorskog kontrolera te cijeli proces dokumentirao u diplomskom radu. Također sam naručio nove PLC module za nove senzore. Te napisao kod za ručno upravljanje laboratorijskog bušaćeg postrojenja.
 
-Nakon mog rada nastavljen je doktorat. Moj projekat je omogućio drugim studentima uče na simulaciji bušenja pomoću laboratorijskog bušaćeg postrojenja.
+Nakon mog rada nastavljen je doktorat. Moj projekat je omogućio drugim studentima da uče na simulaciji bušenja pomoću laboratorijskog bušaćeg postrojenja.
 
 ### Električna kontrolna kutija
 
