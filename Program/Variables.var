@@ -1,7 +1,0 @@
-VAR
-	limit_up : BOOL := FALSE;
-	limit_down : BOOL := FALSE;
-	alarm : BOOL := FALSE;
-	zbroj : USINT := 0;
-	counter : UDINT := 0;
-END_VAR
